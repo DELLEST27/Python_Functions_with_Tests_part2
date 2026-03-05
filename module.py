@@ -55,11 +55,11 @@ def is_even(num: int) -> bool:
 #   - Do NOT print anything.
 #
 def count_vowels(s: str) -> int:
-    vowels = ["a", "e", "i", "o", "u"]
+    vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
     output = 0
     for char in s:
         if char in vowels:
-            output = output + 1
+            output += 1
     return output
 
     
@@ -82,6 +82,7 @@ def count_vowels(s: str) -> int:
 #   - Do NOT use built-in reverse() method.
 #
 def reverse_string(s: str) -> str:
+
     pass
 
 
@@ -102,4 +103,5 @@ def reverse_string(s: str) -> str:
 #   - Must return the largest value.
 #
 def max_of_three(a: int, b: int, c: int) -> int:
+
     pass
