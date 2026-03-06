@@ -2,9 +2,9 @@ from module import reverse_string
 FUNCTION_TO_TEST = reverse_string
 
 TESTS = [
-    (("cat",), "tac"),
-    (("",), ""),
-    (("A",), "A"),
+    (("cat", "tac"),),
+    (("", ""),),
+    (("A", "A",),)
     (("12345",), "54321"),
 ]
 

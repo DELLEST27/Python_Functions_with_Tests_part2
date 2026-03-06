@@ -82,8 +82,16 @@ def count_vowels(s: str) -> int:
 #   - Do NOT use built-in reverse() method.
 #
 def reverse_string(s: str) -> str:
+    output = ""
+    index = len(s) - 1
+    while index >= 0:
+        char = s[index] - 1
+        output = output + char
+        index = index - 1
+    return output
 
-    pass
+
+   
 
 
 # -------------------------------------------------
@@ -103,5 +111,11 @@ def reverse_string(s: str) -> str:
 #   - Must return the largest value.
 #
 def max_of_three(a: int, b: int, c: int) -> int:
-
-    pass
+   nums = [a, b, c]
+   largest = nums[0]
+   index = 0
+   while index < len(nums):
+    current_num = nums[index]
+    if current_num > largest:
+        largest = current_num
+        return largest
